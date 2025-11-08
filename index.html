@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itachi Uchiha - Web Design By Rizky</title>
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!--css-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="crow-container" id="crowContainer">
+      <i class="fas fa-crow crow-silhouette"></i>
+    </div>
+    <div class="loading-progress">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="loading-text" id="loadingText">PREPARING GENJUTSU</div>
+    <div class="loading-subtext" id="loadingSubtext">Assembling the legacy of Uchiha Itachi...</div>
+    <div class="loading-quote" id="loadingQuote">"Those who cannot acknowledge themselves will eventually fail."</div>
+  </div>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="logo-container">
+        <div class="uchiha-icon"></div>
+        <h2>ITACHI</h2>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <a href="#Home">Home</a>
+          <a href="#Jutsu">Jutsu</a>
+          <a href="#Story">Story</a>
+          <a href="#Enemy">Enemy</a>
+          <a href="#Gallery">Gallery</a>
+        </ul>
+      </nav>
+      
+      <!-- Watch Videos Button -->
+      <div class="watch-btn">
+        <a href="watch.html">Watch Videos</a>
+      </div>
+      
+      <!-- Hamburger Menu -->
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <a href="#Home">Home</a>
+      <a href="#Jutsu">Jutsu</a>
+      <a href="#Story">Story</a>
+      <a href="#Enemy">Enemy</a>
+      <a href="#Gallery">Gallery</a>
+      <a href="watch.html">Watch Videos</a>
+    </div>
+  </header>
+
+  <!-- Section Home -->
+  <section id="Home">
+    <!-- Background Video -->
+    <video autoplay muted loop class="video-background">
+      <source src="videos/itachi-bg.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+    
+    <!-- Hero Text -->
+    <div class="hero-text">
+      <h1 class="hero-title">UCHIHA ITACHI</h1>
+      <p class="hero-subtitle">
+        The prodigy who sacrificed everything for peace, carrying the burden of his choices alone to protect the village and his beloved brother.
+      </p>
+    </div>
+    
+    <!-- Three Photo Slider -->
+    <div class="three-slider">
+      <div class="slider-container">
+        <div class="slider-slide slide-center" data-index="0">
+          <img src="images/itachi1.jpg" alt="Itachi Uchiha 1">
+        </div>
+        <div class="slider-slide slide-right" data-index="1">
+          <img src="images/itachi2.jpg" alt="Itachi Uchiha 2">
+        </div>
+        <div class="slider-slide slide-hidden" data-index="2">
+          <img src="images/itachi3.jpg" alt="Itachi Uchiha 3">
+        </div>
+        <div class="slider-slide slide-hidden" data-index="3">
+          <img src="images/itachi4.jpg" alt="Itachi Uchiha 4">
+        </div>
+        <div class="slider-slide slide-hidden" data-index="4">
+          <img src="images/itachi5.jpg" alt="Itachi Uchiha 5">
+        </div>
+        <div class="slider-slide slide-hidden" data-index="5">
+          <img src="images/itachi6.jpg" alt="Itachi Uchiha 6">
+        </div>
+        <div class="slider-slide slide-hidden" data-index="6">
+          <img src="images/itachi7.jpg" alt="Itachi Uchiha 7">
+        </div>
+        <div class="slider-slide slide-hidden" data-index="7">
+          <img src="images/itachi8.jpg" alt="Itachi Uchiha 8">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Jutsu -->
+  <section id="Jutsu">
+    <div class="jutsu-container">
+      <div class="jutsu-title">
+        <h2>JUTSU</h2>
+        <p>Master of the Mangekyō Sharingan, Itachi possessed some of the most powerful and unique techniques in the Naruto universe.</p>
+      </div>
+      
+      <div class="jutsu-grid">
+        <!-- Tsukuyomi Card -->
+        <div class="jutsu-card">
+          <div class="jutsu-card-header">
+            <div class="jutsu-icon">月</div>
+            <h3>Tsukuyomi</h3>
+          </div>
+          <div class="jutsu-card-body">
+            <p>A genjutsu that traps the target in an illusionary world completely controlled by the caster. Time, space, and physical laws can be manipulated at will.</p>
+            
+            <div class="jutsu-details">
+              <div class="jutsu-type">
+                <span>Type</span>
+                <span>Genjutsu</span>
+              </div>
+              <div class="jutsu-rank">
+                <span>Rank</span>
+                <span>S-Class</span>
+              </div>
+            </div>
+            
+            <div class="jutsu-abilities">
+              <h4>Abilities</h4>
+              <ul>
+                <li>Complete control over time perception</li>
+                <li>Tortures the target mentally for days in seconds</li>
+                <li>Can only be broken by someone with Sharingan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Amaterasu Card -->
+        <div class="jutsu-card">
+          <div class="jutsu-card-header">
+            <div class="jutsu-icon">天</div>
+            <h3>Amaterasu</h3>
+          </div>
+          <div class="jutsu-card-body">
+            <p>Black flames that materialize at the focal point of the user's vision. The flames burn until their target is completely incinerated and cannot be extinguished by normal means.</p>
+            
+            <div class="jutsu-details">
+              <div class="jutsu-type">
+                <span>Type</span>
+                <span>Ninjutsu</span>
+              </div>
+              <div class="jutsu-rank">
+                <span>Rank</span>
+                <span>S-Class</span>
+              </div>
+            </div>
+            
+            <div class="jutsu-abilities">
+              <h4>Abilities</h4>
+              <ul>
+                <li>Black flames that never extinguish</li>
+                <li>Burns through almost anything</li>
+                <li>Can be shaped with Susanoo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Susanoo Card -->
+        <div class="jutsu-card">
+          <div class="jutsu-card-header">
+            <div class="jutsu-icon">須</div>
+            <h3>Susanoo</h3>
+          </div>
+          <div class="jutsu-card-body">
+            <p>A gigantic humanoid avatar made of the user's chakra that surrounds and protects them. Itachi's Susanoo wields the Totsuka Blade and Yata Mirror.</p>
+            
+            <div class="jutsu-details">
+              <div class="jutsu-type">
+                <span>Type</span>
+                <span>Kekkei Genkai</span>
+              </div>
+              <div class="jutsu-rank">
+                <span>Rank</span>
+                <span>S-Class</span>
+              </div>
+            </div>
+            
+            <div class="jutsu-abilities">
+              <h4>Abilities</h4>
+              <ul>
+                <li>Near-impenetrable defense with Yata Mirror</li>
+                <li>Seals anything it pierces with Totsuka Blade</li>
+                <li>Complete protection from all directions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Izanami Card -->
+        <div class="jutsu-card">
+          <div class="jutsu-card-header">
+            <div class="jutsu-icon">伊</div>
+            <h3>Izanami</h3>
+          </div>
+          <div class="jutsu-card-body">
+            <p>A genjutsu that traps the target in an endless loop of a specific moment, created to punish those who abuse the power of Izanagi. It can only be escaped by accepting one's fate.</p>
+            
+            <div class="jutsu-details">
+              <div class="jutsu-type">
+                <span>Type</span>
+                <span>Genjutsu</span>
+              </div>
+              <div class="jutsu-rank">
+                <span>Rank</span>
+                <span>Forbidden</span>
+              </div>
+            </div>
+            
+            <div class="jutsu-abilities">
+              <h4>Abilities</h4>
+              <ul>
+                <li>Traps target in an infinite time loop</li>
+                <li>Created to counter Izanagi</li>
+                <li>Causes user to lose sight in one eye</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Crow Clone Card -->
+        <div class="jutsu-card">
+          <div class="jutsu-card-header">
+            <div class="jutsu-icon">鴉</div>
+            <h3>Crow Clone</h3>
+          </div>
+          <div class="jutsu-card-body">
+            <p>A variation of the Shadow Clone technique where the clones are made of crows. When destroyed, the crows can reform or be used for other purposes.</p>
+            
+            <div class="jutsu-details">
+              <div class="jutsu-type">
+                <span>Type</span>
+                <span>Ninjutsu</span>
+              </div>
+              <div class="jutsu-rank">
+                <span>Rank</span>
+                <span>B-Class</span>
+              </div>
+            </div>
+            
+            <div class="jutsu-abilities">
+              <h4>Abilities</h4>
+              <ul>
+                <li>Clones disperse into crows when hit</li>
+                <li>Crows can be used for genjutsu</li>
+                <li>Can reform after being dispersed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fire Style Card -->
+        <div class="jutsu-card">
+          <div class="jutsu-card-header">
+            <div class="jutsu-icon">火</div>
+            <h3>Fire Style</h3>
+          </div>
+          <div class="jutsu-card-body">
+            <p>Itachi was a master of Fire Release techniques, capable of performing powerful fire-based attacks without hand signs at a young age.</p>
+            
+            <div class="jutsu-details">
+              <div class="jutsu-type">
+                <span>Type</span>
+                <span>Ninjutsu</span>
+              </div>
+              <div class="jutsu-rank">
+                <span>Rank</span>
+                <span>Various</span>
+              </div>
+            </div>
+            
+            <div class="jutsu-abilities">
+              <h4>Techniques</h4>
+              <ul>
+                <li>Fireball Jutsu - Master level</li>
+                <li>Phoenix Flower Jutsu</li>
+                <li>Dragon Fire Jutsu</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Story -->
+  <section id="Story">
+    <div class="story-container">
+      <div class="story-title">
+        <h2>STORY</h2>
+        <p>The tragic tale of a prodigy who carried the weight of the world on his shoulders, sacrificing everything for peace.</p>
+      </div>
+      
+      <!-- Sharingan Background Effect -->
+      <div class="sharingan-bg"></div>
+      
+      <!-- Timeline -->
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">Age 4</div>
+            <h3 class="timeline-chapter">The Child Prodigy</h3>
+            <div class="timeline-image">
+              <img src="images/chil.jpg" alt="Young Itachi">
+              <div class="image-overlay"></div>
+            </div>
+            <p class="timeline-description">
+              Itachi awakened his Sharingan at the tender age of 4 after witnessing the horrors of the Third Great Ninja War. 
+              His genius-level intellect and exceptional skills quickly made him renowned throughout the village.
+            </p>
+            <blockquote class="timeline-quote">
+              "Those who cannot acknowledge themselves will eventually fail."
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">Age 7</div>
+            <h3 class="timeline-chapter">Graduation from Academy</h3>
+            <div class="timeline-image">
+              <img src="images/dren.jpg" alt="Itachi Academy">
+              <div class="image-overlay"></div>
+            </div>
+            <p class="timeline-description">
+              Itachi graduated from the Ninja Academy at the top of his class after only one year. 
+              He mastered the basics of ninjutsu, taijutsu, and genjutsu with unprecedented speed.
+            </p>
+            <blockquote class="timeline-quote">
+              "Growth occurs when one goes beyond one's limits. Realizing that is also part of training."
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">Age 11</div>
+            <h3 class="timeline-chapter">ANBU Membership</h3>
+            <div class="timeline-image">
+              <img src="images/anbu.jpg" alt="Itachi ANBU">
+              <div class="image-overlay"></div>
+            </div>
+            <p class="timeline-description">
+              At age 11, Itachi joined the ANBU Black Ops, becoming the youngest member in Konoha's history. 
+              He was assigned to monitor the Uchiha clan's movements as tensions grew.
+            </p>
+            <blockquote class="timeline-quote">
+              "Knowledge and awareness are vague, and perhaps better called illusions."
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">Age 13</div>
+            <h3 class="timeline-chapter">The Uchiha Massacre</h3>
+            <div class="timeline-image">
+              <img src="images/young.jpg" alt="Uchiha Massacre">
+              <div class="image-overlay"></div>
+            </div>
+            <p class="timeline-description">
+              Faced with an impossible choice between his clan and the village, Itachi chose to eliminate the Uchiha clan 
+              to prevent a civil war, sparing only his younger brother Sasuke.
+            </p>
+            <blockquote class="timeline-quote">
+              "No matter how powerful you become, do not try to shoulder everything alone. If you do, you will fail."
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 5 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">Age 14-21</div>
+            <h3 class="timeline-chapter">Akatsuki Member</h3>
+            <div class="timeline-image">
+              <img src="images/akatsuki.jpg" alt="Itachi Akatsuki">
+              <div class="image-overlay"></div>
+            </div>
+            <p class="timeline-description">
+              Itachi joined the criminal organization Akatsuki to keep watch on them from within and protect Konoha. 
+              He partnered with Kisame Hoshigaki while secretly working as a double agent.
+            </p>
+            <blockquote class="timeline-quote">
+              "People live their lives bound by what they accept as correct and true. That's how they define reality."
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 6 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">Age 21</div>
+            <h3 class="timeline-chapter">The Final Battle & Truth</h3>
+            <div class="timeline-image">
+              <img src="images/final.jpg" alt="Final Battle">
+              <div class="image-overlay"></div>
+            </div>
+            <p class="timeline-description">
+              Itachi orchestrated his final battle with Sasuke, secretly weakened by illness, to die by his brother's hand 
+              and transfer his power. The truth about his sacrifices was revealed after his death.
+            </p>
+            <blockquote class="timeline-quote">
+              "I will love you always, Sasuke."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Progress Bar -->
+      <div class="timeline-progress">
+        <div class="progress-dot active" data-chapter="0"></div>
+        <div class="progress-dot" data-chapter="1"></div>
+        <div class="progress-dot" data-chapter="2"></div>
+        <div class="progress-dot" data-chapter="3"></div>
+        <div class="progress-dot" data-chapter="4"></div>
+        <div class="progress-dot" data-chapter="5"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Enemy -->
+  <section id="Enemy">
+    <div class="enemy-container">
+      <div class="enemy-title">
+        <h2>RELATIONSHIP & ENEMIES</h2>
+        <p>The complex network of alliances, rivalries, and bonds that defined Itachi's journey through darkness and sacrifice.</p>
+      </div>
+      
+      <!-- Relationship Web -->
+      <div class="relationship-web" id="relationshipWeb">
+        <!-- Character Nodes -->
+        <div class="character-node itachi" data-id="itachi" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <div class="character-image">
+            <img src="images/itachi.jpg" alt="Itachi Uchiha">
+          </div>
+          <div class="character-name">ITACHI UCHIHA</div>
+          <div class="character-role">The Prodigy</div>
+        </div>
+        
+        <div class="character-node family" data-id="sasuke" style="top: 20%; left: 50%;">
+          <div class="character-image">
+            <img src="images/sasuke.jpg" alt="Sasuke Uchiha">
+          </div>
+          <div class="character-name">SASUKE</div>
+          <div class="character-role">Younger Brother</div>
+        </div>
+        
+        <div class="character-node complex" data-id="shisui" style="top: 30%; left: 20%;">
+          <div class="character-image">
+            <img src="images/shisui.jpg" alt="Shisui Uchiha">
+          </div>
+          <div class="character-name">SHISUI</div>
+          <div class="character-role">Best Friend</div>
+        </div>
+        
+        <div class="character-node enemy" data-id="orochimaru" style="top: 20%; left: 80%;">
+          <div class="character-image">
+            <img src="images/orochimaru.jpg" alt="Orochimaru">
+          </div>
+          <div class="character-name">OROCHIMARU</div>
+          <div class="character-role">The Sannin</div>
+        </div>
+        
+        <div class="character-node rival" data-id="kakashi" style="top: 70%; left: 25%;">
+          <div class="character-image">
+            <img src="images/kakashi.jpg" alt="Kakashi Hatake">
+          </div>
+          <div class="character-name">KAKASHI</div>
+          <div class="character-role">Copy Ninja</div>
+        </div>
+        
+        <div class="character-node ally" data-id="kisame" style="top: 70%; left: 75%;">
+          <div class="character-image">
+            <img src="images/kisame.jpg" alt="Kisame Hoshigaki">
+          </div>
+          <div class="character-name">KISAME</div>
+          <div class="character-role">Partner</div>
+        </div>
+        
+        <div class="character-node enemy" data-id="deidara" style="top: 40%; left: 85%;">
+          <div class="character-image">
+            <img src="images/deidara.jpg" alt="Deidara">
+          </div>
+          <div class="character-name">DEIDARA</div>
+          <div class="character-role">Explosion Artist</div>
+        </div>
+        
+        <div class="character-node complex" data-id="fugaku" style="top: 35%; left: 15%;">
+          <div class="character-image">
+            <img src="images/fugaku.jpg" alt="Fugaku Uchiha">
+          </div>
+          <div class="character-name">FUGAKU</div>
+          <div class="character-role">Father</div>
+        </div>
+      </div>
+      
+      <!-- Relationship Details Panel -->
+      <div class="relationship-panel" id="relationshipPanel">
+        <div class="panel-header">
+          <div class="panel-character-image">
+            <img src="" alt="" id="panelCharacterImage">
+          </div>
+          <div class="panel-character-info">
+            <div class="panel-character-name" id="panelCharacterName"></div>
+            <div class="panel-character-role" id="panelCharacterRole"></div>
+            <div class="relationship-type" id="relationshipType"></div>
+          </div>
+        </div>
+        
+        <div class="relationship-details">
+          <p id="relationshipDescription"></p>
+        </div>
+        
+        <div class="relationship-stats">
+          <div class="stat-item">
+            <div class="stat-label">Threat Level</div>
+            <div class="stat-value" id="statThreat"></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Relationship Depth</div>
+            <div class="stat-value" id="statDepth"></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Battles</div>
+            <div class="stat-value" id="statBattles"></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Outcome</div>
+            <div class="stat-value" id="statOutcome"></div>
+          </div>
+        </div>
+        
+        <div class="key-moments">
+          <h4>Key Moments</h4>
+          <ul class="moments-list" id="keyMoments"></ul>
+        </div>
+      </div>
+      
+      <!-- Web Controls -->
+      <div class="web-controls">
+        <button class="control-btn active" data-filter="all">All Relationships</button>
+        <button class="control-btn" data-filter="enemy">Enemies</button>
+        <button class="control-btn" data-filter="family">Family</button>
+        <button class="control-btn" data-filter="ally">Allies</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Gallery -->
+  <section id="Gallery">
+    <div class="ancient-scroll">
+      <div class="scroll-content">
+        
+        <!-- Scroll Header -->
+        <div class="scroll-header">
+          <div class="scroll-title">
+            <h2>UCHIHA ITACHI MEMORIES</h2>
+            <p>Memories etched in time, like ink on ancient paper</p>
+          </div>
+          <div class="scroll-seal">
+            <div class="uchiha-seal"></div>
+          </div>
+        </div>
+
+        <!-- Memory 1 -->
+        <div class="memory-section">
+          <div class="memory-quote">
+            "Those who cannot acknowledge themselves will eventually fail."
+          </div>
+          <div class="memory-content">
+            <div class="memory-image">
+              <img src="images/chil.jpg" alt="Prodigy Awakens">
+              <div class="ink-reveal"></div>
+            </div>
+            <div class="memory-info">
+              <h3>THE PRODIGY AWAKENS</h3>
+              <p>Itachi awakened his Sharingan at age 4, witnessing the horrors of war that would shape his destiny.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Memory 2 -->
+        <div class="memory-section">
+          <div class="memory-quote">
+            "Growth occurs when one goes beyond one's limits."
+          </div>
+          <div class="memory-content reverse">
+            <div class="memory-info">
+              <h3>ANBU BLACK OPS</h3>
+              <p>Youngest ANBU captain in Konoha history, carrying the weight of village and clan on his shoulders.</p>
+            </div>
+            <div class="memory-image">
+              <img src="images/anbu.jpg" alt="ANBU Period">
+              <div class="ink-reveal"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Memory 3 -->
+        <div class="memory-section">
+          <div class="memory-quote">
+            "We do not know what kind of people we truly are until the moment before our deaths."
+          </div>
+          <div class="memory-content">
+            <div class="memory-image">
+              <img src="images/itachi3.jpg" alt="Final Sacrifice">
+              <div class="ink-reveal"></div>
+            </div>
+            <div class="memory-info">
+              <h3>THE ULTIMATE SACRIFICE</h3>
+              <p>Choosing between clan and village, Itachi carried the burden of his choice alone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Burn Marks -->
+      <div class="burn-mark top-left"></div>
+      <div class="burn-mark top-right"></div>
+      <div class="burn-mark bottom-left"></div>
+      <div class="burn-mark bottom-right"></div>
+    </div>
+  </section>
+  
+  <!-- Video Card -->
+  <div class="card-video">
+    <video autoplay muted loop>
+      <source src="videos/itachibgvd.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="crow-animation">
+      <i class="fas fa-crow"></i>
+    </div>
+    
+    <div class="footer-content">
+      <div class="footer-grid">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-uchiha-icon"></div>
+          </div>
+          <p class="footer-description">
+            "Those who cannot acknowledge themselves will eventually fail." 
+            - Itachi Uchiha. A tribute to the prodigy who sacrificed everything for peace.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#Home"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#Jutsu"><i class="fas fa-chevron-right"></i> Jutsu</a></li>
+            <li><a href="#Story"><i class="fas fa-chevron-right"></i> Story</a></li>
+            <li><a href="#Enemy"><i class="fas fa-chevron-right"></i> Relationships</a></li>
+          </ul>
+        </div>
+        
+        <!-- Resources -->
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Character Wiki</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Episode Guide</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Manga Chapters</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Voice Actors</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Art Collection</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div class="footer-links">
+          <h3>Community</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-users"></i>
+              <span>Join our Discord</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>itachi@uchiha.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-share-alt"></i>
+              <span>Share this tribute</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-heart"></i>
+              <span>Support the creators</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Quote Section -->
+      <div class="footer-quote">
+        <div class="quote-text">
+          "We do not know what kind of people we truly are until the moment before our deaths."
+        </div>
+        <div class="quote-author">- Itachi Uchiha</div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2025 Design web by rizky. All Naruto rights belong to Masashi Kishimoto.
+        </div>
+        <div class="footer-nav">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
